@@ -1,0 +1,31 @@
+/* src/components/Hero.css */
+.hero {
+    background: url('../assets/banner.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.image{
+    height: 70px ;
+    width: 70px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.cta-button {
+    background: #f06;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background: #d05;
+}

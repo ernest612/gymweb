@@ -1,0 +1,46 @@
+/* src/components/Header.css */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 1.5em;
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.header .nav-links li {
+    margin: 0 15px;
+}
+
+.header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .header .nav-links.active {
+        display: flex;
+    }
+}

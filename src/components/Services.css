@@ -1,0 +1,13 @@
+/* src/components/Services.css */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}

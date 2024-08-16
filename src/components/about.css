@@ -1,0 +1,14 @@
+/* src/components/About.css */
+.about {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+}
