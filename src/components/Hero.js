@@ -1,10 +1,10 @@
-// src/components/Hero.js
 import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero">
+      <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1>Transform Your Body</h1>
         <p>Join our fitness program and achieve your goals</p>

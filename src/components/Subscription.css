@@ -1,0 +1,145 @@
+.subscription {
+    padding: 60px 20px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .subscription h2 {
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .plan {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .plan:hover, .plan.selected {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .plan h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .plan .price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f06;
+    margin-bottom: 20px;
+  }
+  
+  .plan .price span {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .plan li {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .select-button, .subscribe-button {
+    background: #f06;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .select-button:hover, .subscribe-button:hover {
+    background: #d05;
+  }
+  
+  .subscribe-button {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: slideIn 0.5s, fadeOut 0.5s 4.5s;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .plan.subscribed {
+    border: 2px solid #4CAF50;
+    background-color: #E8F5E9;
+  }
+  
+  .plan.subscribed .select-button {
+    background-color: #4CAF50;
+  }
+  
+  .plan.subscribed:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan.subscribed .select-button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .plan-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .plan {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  }

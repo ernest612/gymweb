@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/about';
 import Services from './components/Service';
 import Contact from './components/Contact';
+import Subscription from './components/Subscription';
 import './App.css'; // Global styles
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <Contact />
+      <Subscription />
     </div>
   );
 }
